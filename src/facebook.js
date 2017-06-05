@@ -60,7 +60,7 @@ const handlePayload = (payload, username) => {
             new GenericElement('Away from home').setImageUrl('https://images.unsplash.com/photo-1478809846154-d4ca173df3e0').setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/away-from-home')]),
             new GenericElement('STEM Women').setImageUrl('https://www.usnews.com/cmsmedia/81/0e/009d6c024cfa8c2e8df00d37e226/151021-stem-stock.jpg').setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/women-in-stem')]),
             new GenericElement('Finance').setImageUrl('http://blog.oxforddictionaries.com/wp-content/uploads/money-coins.jpg').setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/finances')]),
-        ]).addQuickReply(new TextQuickReply('Restart', 'start'));
+        ]).addQuickReply(new TextQuickReply('Restart', 'START'));
     case 'LAST_QUESTION':
       return (handlePayload('start', username));
     default:
