@@ -3,7 +3,7 @@ import {
   MessengerProfile,
   GreetingText,
   PersistentMenu,
-  UrlMenuItem,
+  PostbackMenuItem,
   ProcessIncoming,
   TextMessage,
   TextQuickReply,
@@ -16,14 +16,14 @@ import config from './config';
 
 const facebook = new Client(config.facebook.accessToken);
 facebook.setMessengerProfile(new MessengerProfile()
-  .setGetStartedButton('start')
+  .setGetStartedButton('START')
   .addGreetingText(new GreetingText('Hi {{user_first_name}}, I\'m here to help foster your well-being & a sense of belonging at work'))
-  .addPersistentMenu(new PersistentMenu([new UrlMenuItem('Dashboard', 'https://yangchoonsuh.wixsite.com/wellink/forum')], 'default', true))
+  .addPersistentMenu(new PersistentMenu([new PostbackMenuItem('Dashboard', 'DASHBOARD')], 'default', true))
 );
 
 const handlePayload = (payload, username) => {
   switch (payload) {
-    case 'start':
+    case 'START':
       return new TextMessage('Hi! To best help you, I need to ask a couple of questions so I can help you out')
         .addQuickReply(new TextQuickReply('Ask away!', 'GENDER_QUESTION'));
     case 'GENDER_QUESTION':
@@ -55,6 +55,7 @@ const handlePayload = (payload, username) => {
           .addQuickReply(new TextQuickReply('Communications', 'INTEREST_QUESTION_START'))
           .addQuickReply(new TextQuickReply('Social sciences', 'INTEREST_QUESTION_START'));
     case 'INTEREST_QUESTION_START':
+    case 'DASHBOARD':
         return new GenericTemplate([
             new GenericElement('Away from home').setImageUrl('https://images.unsplash.com/photo-1478809846154-d4ca173df3e0').setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/away-from-home')]),
             new GenericElement('STEM Women').setImageUrl('https://www.usnews.com/cmsmedia/81/0e/009d6c024cfa8c2e8df00d37e226/151021-stem-stock.jpg').setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/women-in-stem')]),
