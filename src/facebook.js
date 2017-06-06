@@ -28,16 +28,16 @@ const handlePayload = (payload, username) => {
         .addQuickReply(new TextQuickReply('Take the quiz!', 'AGE_QUESTION'))
         .addQuickReply(new TextQuickReply('What is this about?', 'ABOUT_WELLINK'));
     case 'AGE_QUESTION':
-      return new TextMessage('Next Question - What age range do you belong to?')
+      return new TextMessage('What age range do you belong to?')
         .addQuickReply(new TextQuickReply('18 - 24 years old', 'GENDER_QUESTION'))
         .addQuickReply(new TextQuickReply('25 - 29 years old', 'GENDER_QUESTION'))
         .addQuickReply(new TextQuickReply('30 - 34 years old', 'GENDER_QUESTION'))
         .addQuickReply(new TextQuickReply('35 years and older', 'GENDER_QUESTION'))
         .addQuickReply(new TextQuickReply('Prefer not to say', 'GENDER_QUESTION'));
     case 'GENDER_QUESTION':
-      return new TextMessage('To which gender identity do you most identify?')
-        .addQuickReply(new TextQuickReply('Female', 'FIELD_QUESTION'))
-        .addQuickReply(new TextQuickReply('Male', 'FIELD_QUESTION'))
+      return new TextMessage('What is your gender?')
+        .addQuickReply(new TextQuickReply('Woman', 'FIELD_QUESTION'))
+        .addQuickReply(new TextQuickReply('Man', 'FIELD_QUESTION'))
         .addQuickReply(new TextQuickReply('Transwoman', 'FIELD_QUESTION'))
         .addQuickReply(new TextQuickReply('Transman', 'FIELD_QUESTION'))
         .addQuickReply(new TextQuickReply('Other', 'FIELD_QUESTION'))
@@ -84,7 +84,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_2':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Healthcare', 'DASHBOARD'))
@@ -95,7 +95,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_3':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Healthcare', 'DASHBOARD'))
@@ -106,7 +106,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_4':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -117,7 +117,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_5':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -128,7 +128,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_6':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -139,7 +139,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_7':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -150,7 +150,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_8':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -161,7 +161,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_9':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -172,7 +172,7 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Life outside of work', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Inequality', 'DASHBOARD'));
     case 'CHALLENGE_SECONDARY_10':
-    return new TextMessage('What is your highest level of education?')
+    return new TextMessage('What is the secondary challenge that you are faced with right now?')
       .addQuickReply(new TextQuickReply('Finances', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Relationships', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Support systems', 'DASHBOARD'))
@@ -183,21 +183,25 @@ const handlePayload = (payload, username) => {
       .addQuickReply(new TextQuickReply('Life outside of work', 'DASHBOARD'))
       .addQuickReply(new TextQuickReply('Gender issues', 'DASHBOARD'));
     case 'DASHBOARD':
-      return new GenericTemplate([
-          new GenericElement('Away from home')
-          .setImageUrl('https://images.unsplash.com/photo-1478809846154-d4ca173df3e0')
-          .setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/away-from-home')]),
-          new GenericElement('STEM Women')
-          .setImageUrl('https://www.usnews.com/cmsmedia/81/0e/009d6c024cfa8c2e8df00d37e226/151021-stem-stock.jpg')
-          .setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/women-in-stem')]),
-          new GenericElement('Finance')
-          .setImageUrl('http://blog.oxforddictionaries.com/wp-content/uploads/money-coins.jpg')
-          .setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/finances')]),
-        ])
-        .addQuickReply(new TextQuickReply('Retake the quiz', 'START'));
+      return [
+          new TextMessage('Here are your personalized links:'),
+          new GenericTemplate([
+              new GenericElement('Away from home')
+              .setImageUrl('https://images.unsplash.com/photo-1478809846154-d4ca173df3e0')
+              .setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/away-from-home')]),
+              new GenericElement('STEM Women')
+              .setImageUrl('https://www.usnews.com/cmsmedia/81/0e/009d6c024cfa8c2e8df00d37e226/151021-stem-stock.jpg')
+              .setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/women-in-stem')]),
+              new GenericElement('Finance')
+              .setImageUrl('http://blog.oxforddictionaries.com/wp-content/uploads/money-coins.jpg')
+              .setButtons([new UrlButton('Open', 'https://yangchoonsuh.wixsite.com/wellink/forum/finances')]),
+            ])
+            .addQuickReply(new TextQuickReply('Retake the quiz', 'START'))
+      ];
     case 'ABOUT_WELLINK':
     default:
       return new TextMessage(`Sorry ${username} I can\'t do that yet`)
+        .addQuickReply(new TextQuickReply('Take the quiz!', 'AGE_QUESTION'));
   }
 }
 
@@ -206,6 +210,8 @@ const handleMessage = (message, username) => {
   switch (message.type) {
     case 'message':
       replies = message.quick_reply ? handlePayload(message.quick_reply) : new TextMessage(`Sorry ${username} I can\'t do free text`)
+        .addQuickReply(new TextQuickReply('Take the quiz!', 'AGE_QUESTION'))
+          .addQuickReply(new TextQuickReply('View Dashboard', 'DASHBOARD'));
       break;
     case 'postback':
       replies = handlePayload(message.payload, username);
@@ -214,9 +220,8 @@ const handleMessage = (message, username) => {
       handlePayload('', username);
   }
   replies = Array.isArray(replies) ? replies : [replies];
-  for (const reply of replies) {
-    facebook.sendMessage(reply, message.sender);
-    setTimeout(60);
+  for (let r = 0; r < replies.length; r++) {
+    setTimeout(() => facebook.sendMessage(replies[r], message.sender), r * 60);
   }
 
 }
